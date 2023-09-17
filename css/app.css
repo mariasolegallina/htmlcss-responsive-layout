@@ -50,12 +50,32 @@ figure > img {
 	border-radius: 50px;
 }
 
+.col-12 {
+	flex-basis: 100%;
+}
+
+.col-8 {
+	flex-basis: calc(100% / 12) * 8;
+}
+
+.col-6 {
+	flex-basis: calc(100% / 2);
+}
+
+.col-4 {
+	flex-basis: calc(100% / 3);
+}
+
 
 /* containers */
 .container {
 	max-width: 100%;
 	/* padding: 0 30px; */
 }
+
+
+
+
 
 /* header */
 .main-header {
