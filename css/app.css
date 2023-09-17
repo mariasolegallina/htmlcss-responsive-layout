@@ -69,7 +69,18 @@ figure > img {
 .white-btn {
 	background-color: white;
 	color: var(--blue);
-	padding: 0 18px;
+	border-radius: 50px;
+}
+
+.blue-btn {
+	background-color: var(--blue);
+	color: white;
+	border-radius: 50px;
+}
+
+.violet-btn {
+	background-color: var(--violet);
+	color: white;
 	border-radius: 50px;
 }
 
@@ -127,8 +138,13 @@ figure > img {
 
 .header-menu__horizontal .row {
 	font-size: 16px;
+	font-weight: 400;
 	line-height: 38px;
 	gap: 30px;
+}
+
+.header-menu .white-btn {
+	padding: 0 18px;
 }
 
 @media (min-width: 992px) {
@@ -163,12 +179,21 @@ figure > img {
 	gap: 28px;
 }
 
+.col-8 .features__text {
+	align-items: flex-start;
+}
+
 .features__text .headline-s {
 	color: var(--blue);
 }
 
 .features__text .bodytext-m {
 	color: var(--dark-grey);
+}
+
+.features__text .blue-btn {
+	padding: 0 50px;
+	line-height: 40px;
 }
 
 
