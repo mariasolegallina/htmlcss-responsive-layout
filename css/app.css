@@ -31,6 +31,7 @@ figure > img {
 
 .row {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 /* colours */
@@ -50,31 +51,35 @@ figure > img {
 	border-radius: 50px;
 }
 
-.col-12 {
-	flex-basis: 100%;
+.rounded-box {
+	border-radius: 20px;
 }
 
-.col-8 {
-	flex-basis: calc(100% / 12) * 8;
-}
+@media (min-width: 576px) {
+	
+	.col-12 {
+		flex-basis: 100%;
+	}
 
-.col-6 {
-	flex-basis: calc(100% / 2);
-}
+	.col-8 {
+		flex-basis: calc((100% / 12) * 8);
+	}
 
-.col-4 {
-	flex-basis: calc(100% / 3);
-}
+	.col-6 {
+		flex-basis: calc(100% / 2);
+	}
 
+	.col-4 {
+		flex-basis: calc(100% / 3);
+	}
+
+}
 
 /* containers */
 .container {
 	max-width: 100%;
 	/* padding: 0 30px; */
 }
-
-
-
 
 
 /* header */
@@ -116,6 +121,11 @@ figure > img {
 }
 
 /* main */
+.features .rounded-box {
+	background-color: var(--light-blue);
+	color: white;
+}
+
 
 @media (min-width: 576px) {
 	
@@ -136,5 +146,10 @@ figure > img {
 
 .debug .row {
 	border: 1px solid pink;
+	padding: 20px;
+}
+
+.debug .row > [class^='col'] {
+	border: 1px solid orange;
 	padding: 20px;
 }
