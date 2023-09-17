@@ -43,7 +43,29 @@ figure > img {
 	--dark-grey: #333333;
 }
 
-/* layout elements */
+/* text */
+.headline-s {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.bodytext-s {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.bodytext-m {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+
+.bodytext-l {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* layout */
 .white-btn {
 	background-color: white;
 	color: var(--blue);
@@ -92,7 +114,7 @@ figure > img {
 .main-header__row {
 	justify-content: space-between;
 	align-items: center;
-	padding: 18px 30px;
+	padding: 18px 32px;
 }
 
 .header-menu__hamburger {
@@ -121,9 +143,32 @@ figure > img {
 }
 
 /* main */
+.features {
+	padding: 0 20px;
+}
+
+.features [class^='col'] {
+	padding: 0 12px;
+}
+
 .features .rounded-box {
 	background-color: var(--light-blue);
 	color: white;
+}
+
+.features__text {
+	padding: 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.features__text .headline-s {
+	color: var(--blue);
+}
+
+.features__text .bodytext-m {
+	color: var(--dark-grey);
 }
 
 
