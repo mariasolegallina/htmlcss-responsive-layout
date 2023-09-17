@@ -1,3 +1,4 @@
+/* default settings */
 * {
 	margin: 0;
 	padding: 0;
@@ -26,4 +27,92 @@ img {
 figure > img {
 	display: block;
 	width: 100%;
+}
+
+.row {
+	display: flex;
+}
+
+/* colours */
+:root {
+	--blue: #0084FD;
+	--light-blue: #B5DDFF;
+	--violet: #9792E4;
+	--yellow: #FDC15F;
+	--dark-grey: #333333;
+}
+
+/* layout elements */
+.white-btn {
+	background-color: white;
+	color: var(--blue);
+	padding: 0 18px;
+	border-radius: 50px;
+}
+
+
+/* containers */
+.container {
+	max-width: 100%;
+	/* padding: 0 30px; */
+}
+
+/* header */
+.main-header {
+	background-color: var(--blue);
+	color: white;
+}
+
+/* header__nav */
+.main-header__row {
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 30px;
+}
+
+.header-menu__hamburger {
+	font-size: 24px;
+}
+
+.header-menu__horizontal {
+	display: none;
+}
+
+.header-menu__horizontal .row {
+	font-size: 16px;
+	line-height: 38px;
+	gap: 30px;
+
+}
+
+@media (min-width: 576px) {
+	
+}
+
+@media (min-width: 992px) {
+
+	.header-menu__hamburger {
+		display: none;
+	}
+
+	.header-menu__horizontal {
+		display: contents;
+	}
+}
+
+
+
+
+
+
+
+/* DEBUG */
+.debug .container {
+	border: 1px solid red;
+	padding: 20px;
+}
+
+.debug .row {
+	border: 1px solid pink;
+	padding: 20px;
 }
