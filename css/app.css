@@ -65,6 +65,7 @@ figure > img {
 	font-weight: 400;
 }
 
+
 /* layout */
 .white-btn {
 	background-color: white;
@@ -163,6 +164,10 @@ figure > img {
 	padding: 0 20px;
 }
 
+.features .row {
+	row-gap: 24px;
+}
+
 .features [class^='col'] {
 	padding: 0 12px;
 }
@@ -183,6 +188,11 @@ figure > img {
 	align-items: flex-start;
 }
 
+.col-4 .features__text {
+	align-items: center;
+	text-align: center;
+}
+
 .features__text .headline-s {
 	color: var(--blue);
 }
@@ -196,8 +206,16 @@ figure > img {
 	line-height: 40px;
 }
 
+.blue-icon {
+	color: var(--blue);
+	font-size: 70px;
+}
 
 @media (min-width: 576px) {
+	/* .col-8 .row {
+		display: flex;
+		flex-direction: column;
+	} */
 	
 }
 
