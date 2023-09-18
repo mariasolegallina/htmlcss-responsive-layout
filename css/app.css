@@ -326,7 +326,35 @@ figure > img {
 }
 
 /* main__testimonials */
+.testimonials {
+	padding: 52px 20px 110px;
+}
 
+.testimonials__row {
+	row-gap: 32px;
+}
+
+.testimonials__intro {
+	text-align: center;
+	flex-direction: column;
+	row-gap: 40px;
+}
+
+.testimonials__intro h3 {
+	color: var(--violet);
+}
+
+.testimonials .rounded-box {
+	background-color: var(--violet);
+	padding: 30px 20px;
+}
+
+.testimonial-photo {
+	max-width: 200px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
 
 
 
