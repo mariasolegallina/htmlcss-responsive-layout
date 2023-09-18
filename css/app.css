@@ -89,8 +89,9 @@ figure > img {
 	border-radius: 20px;
 }
 
-@media (min-width: 810px) {
-	
+@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) {
 	.col-12 {
 		flex-basis: 100%;
 	}
@@ -106,8 +107,16 @@ figure > img {
 	.col-4 {
 		flex-basis: calc(100% / 3);
 	}
-
 }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { ... }
+
+@media (min-width: 1400px) { ... }
+
+
+
 
 /* containers */
 .container {
@@ -161,10 +170,10 @@ figure > img {
 
 /* main */
 .features {
-	padding: 0 20px;
+	padding: 50px 20px 80px 20px;
 }
 
-.features .row {
+.features .row {	
 	row-gap: 24px;
 }
 
@@ -212,15 +221,16 @@ figure > img {
 }
 
 .phone {
-	max-width: 300px;
-}
-
-@media (min-width: 810px) {
-
+	width: 100%;
+	max-width: 254px;
 }
 
 @media (min-width: 992px) {
-
+	.features .rounded-box {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+	}
 }
 
 
