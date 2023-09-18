@@ -345,15 +345,47 @@ figure > img {
 }
 
 .testimonials .rounded-box {
+	color: white;
+	flex-direction: column;
+	gap: 20px;
 	background-color: var(--violet);
 	padding: 30px 20px;
 }
 
-.testimonial-photo {
+.testimonials-photo {
+	margin: 0 auto;
 	max-width: 200px;
 	border-radius: 50%;
 	aspect-ratio: 1;
 	object-fit: cover;
+}
+
+.testimonials__descriptions {
+	text-align: center;
+	display: flex;
+	row-gap: 32px;
+	flex-direction: column;
+}
+
+.testimonial-name {
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+	.testimonials .rounded-box {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 20px;
+	}
+
+	.testimonials__descriptions {
+		text-align: left;
+		display: flex;
+		row-gap: 32px;
+		flex-direction: column;
+	
+	}
 }
 
 
