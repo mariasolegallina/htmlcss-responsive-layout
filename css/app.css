@@ -89,7 +89,7 @@ figure > img {
 	border-radius: 20px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 810px) {
 	
 	.col-12 {
 		flex-basis: 100%;
@@ -208,15 +208,15 @@ figure > img {
 
 .blue-icon {
 	color: var(--blue);
-	font-size: 70px;
+	font-size: 60px;
 }
 
-@media (min-width: 576px) {
-	/* .col-8 .row {
-		display: flex;
-		flex-direction: column;
-	} */
-	
+.phone {
+	max-width: 300px;
+}
+
+@media (min-width: 810px) {
+
 }
 
 @media (min-width: 992px) {
