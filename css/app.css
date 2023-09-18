@@ -111,7 +111,6 @@ figure > img {
 
 [class^='col'] {
 	padding: 0 12px;
-	row-gap: 24px;
 }
 
 @media (min-width: 768px) {
@@ -140,13 +139,25 @@ figure > img {
 /* containers */
 [class^='container'] {
 	max-width: 100%;
+	margin: 0 auto;
 }
 
 @media (min-width: 992px) { 
 	.container-s {
+		max-width: 880px;
+	}
 
+	.container-l {
+		min-width: 992px;
+		max-width: 1200px;
 	}
 }
+
+/* @media (min-width: 1200px) { 
+	.container-s {
+		max-width: 1200px;
+	}
+} */
 
 /* header */
 .main-header {
@@ -198,13 +209,9 @@ figure > img {
 	padding: 50px 20px 80px 20px;
 }
 
-/* .features .row {	
+.features .row {	
 	row-gap: 24px;
-} */
-
-/* .features [class^='col'] {
-	padding: 0 12px;
-} */
+}
 
 .features .rounded-box {
 	background-color: var(--light-blue);
