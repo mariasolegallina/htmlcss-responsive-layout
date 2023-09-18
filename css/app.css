@@ -44,6 +44,12 @@ figure > img {
 }
 
 /* text */
+.headline-xs {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
 .headline-s {
 	font-size: 22px;
 	font-weight: 700;
@@ -318,6 +324,9 @@ figure > img {
 		max-width: 55%;
 	}
 }
+
+/* main__testimonials */
+
 
 
 
