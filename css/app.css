@@ -60,6 +60,11 @@ figure > img {
 	font-weight: 700;
 }
 
+.headline-l {
+	font-size: 32px;
+	font-weight: 700;
+}
+
 .bodytext-s {
 	font-size: 14px;
 	font-weight: 400;
@@ -79,6 +84,11 @@ figure > img {
 @media (min-width: 768px) {
 	.headline-m {
 		font-size: 42px;
+		font-weight: 700;
+	}
+
+	.headline-l {
+		font-size: 68px;
 		font-weight: 700;
 	}
 }
@@ -217,6 +227,7 @@ figure > img {
 .features .rounded-box {
 	background-color: var(--light-blue);
 	color: white;
+	height: 100%;
 }
 
 .features__text {
@@ -387,6 +398,8 @@ figure > img {
 	
 	}
 }
+
+/* main__benefits */
 
 
 
